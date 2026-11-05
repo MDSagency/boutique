@@ -1,0 +1,251 @@
+Act as a senior e-commerce designer, brand designer, and frontend developer.
+
+Build a complete, visually stunning, premium e-commerce website concept for an Algerian women's fashion boutique called:
+
+**BOUTIQUE TRENDY SHOP DZ**
+
+Instagram: https://www.instagram.com/boutique_trendyshopdz/
+
+IMPORTANT:
+This is a website proposal/demo that will be presented to the business owner. It must look impressive enough that she immediately understands the value of having her own professional online store.
+
+If I provide Instagram screenshots or product photos, use them as the primary reference for the brand identity, products, colors, and overall aesthetic. Do not invent an existing logo or pretend to know her exact brand guidelines.
+
+# 1. ART DIRECTION
+
+Create a sophisticated, feminine, modern fashion e-commerce experience.
+
+Visual direction:
+- Premium editorial fashion aesthetic.
+- Elegant, minimal, refined composition.
+- Warm ivory and cream backgrounds.
+- Muted rose accents.
+- Deep espresso typography.
+- Subtle gold details.
+- Beautiful whitespace and visual hierarchy.
+- Elegant serif typography for headlines.
+- Modern sans-serif typography for navigation and product information.
+
+Suggested palette:
+- Background: #FAF8F5
+- Primary text: #292522
+- Secondary text: #898078
+- Accent: #B77D78
+- Soft background: #F0EAE4
+- White: #FFFFFF
+
+Avoid:
+- Generic Shopify-style templates.
+- Excessive rounded cards.
+- Loud gradients.
+- Excessive animations.
+- Cheap-looking UI.
+- Cluttered product layouts.
+- Random stock photography that doesn't match the boutique's aesthetic.
+
+The website should feel like a premium independent fashion label.
+
+# 2. HOMEPAGE
+
+Create a beautiful, high-impact homepage.
+
+A. Announcement bar
+A slim announcement bar for configurable announcements, without inventing promotions or delivery guarantees.
+
+B. Navigation
+- Brand logo / wordmark: BOUTIQUE TRENDY
+- Home
+- New Arrivals
+- Collections
+- About Us
+- Contact
+- Search icon
+- Shopping bag icon
+
+C. Hero section
+
+Large editorial fashion photograph with elegant typography.
+
+Headline:
+"Le style qui vous ressemble."
+
+Description:
+"Découvrez une sélection de pièces pensées pour sublimer votre style au quotidien."
+
+Primary CTA:
+"DÉCOUVRIR LA COLLECTION"
+
+Use an elegant editorial composition, not a generic centered text block.
+
+D. Featured collections
+
+Create attractive visual collection cards:
+- Nouveautés
+- Robes
+- Ensembles
+- Accessoires
+
+Keep collection names and images editable. Only retain categories that match the owner's actual products.
+
+E. Best sellers
+
+Beautiful product grid with:
+- Product photograph
+- Product name
+- Price in DZD
+- Available sizes
+- Available colors
+- Quick view
+- Add to bag
+
+F. Editorial promotional section
+
+A large fashion image with a short editorial message and CTA.
+
+G. New arrivals
+
+A second product grid with a clear visual distinction from best sellers.
+
+H. Instagram section
+
+Title: "SUIVEZ NOTRE UNIVERS"
+
+Display an attractive Instagram-inspired image grid.
+
+Include a button linking to the actual Instagram profile:
+https://www.instagram.com/boutique_trendyshopdz/
+
+I. Footer
+
+- Boutique logo
+- Short brand description
+- Navigation links
+- Instagram link
+- Contact information (configurable)
+- Customer service links
+- Legal links
+
+# 3. PRODUCT EXPERIENCE
+
+Create a complete product detail experience.
+
+Each product should have:
+- Large product photography.
+- Image gallery.
+- Product title.
+- Price in DZD.
+- Size selector.
+- Color selector where applicable.
+- Quantity selector.
+- Description.
+- Add to cart button.
+- Order through WhatsApp button.
+
+Make size and color selection interactive.
+
+# 4. SHOPPING CART
+
+Implement a functional shopping cart:
+- Add products.
+- Remove products.
+- Change quantities.
+- Calculate subtotal.
+- Display selected sizes and colors.
+- Continue shopping.
+- Proceed to order.
+
+Persist the cart locally between page refreshes.
+
+# 5. ORDERING SYSTEM
+
+The target market is Algeria.
+
+Create a simple checkout experience designed for local customers.
+
+Customer information:
+- Full name.
+- Phone number.
+- Wilaya.
+- Commune.
+- Delivery address.
+- Additional instructions.
+
+Currency: DZD (Algerian dinar).
+
+The order should be prepared and sent through WhatsApp using a configurable business phone number.
+
+Generate a professional pre-filled WhatsApp message containing:
+- Customer information.
+- Ordered products.
+- Sizes and colors.
+- Quantities.
+- Subtotal.
+
+Do not invent a business phone number, shipping fee, payment integration, or delivery policy. Keep these configurable.
+
+If the WhatsApp number is not configured, show a clear setup message instead of sending the order to a fake number.
+
+# 6. LANGUAGE
+
+Implement two languages:
+- French (default).
+- Arabic (with proper RTL layout).
+
+The language switch must actually work throughout the website.
+
+Use natural Algerian-market-friendly French and Arabic, not awkward machine-translated text.
+
+# 7. DESIGN DETAILS
+
+Pay special attention to:
+- Product image quality and cropping.
+- Responsive layouts.
+- Hover effects.
+- Smooth but subtle transitions.
+- Elegant typography.
+- Consistent spacing.
+- Beautiful buttons.
+- Mobile navigation.
+- Loading and empty states.
+
+The mobile experience is extremely important because most Instagram visitors will access the store through their phones.
+
+# 8. FUNCTIONAL REQUIREMENTS
+
+Use:
+- React.
+- TypeScript.
+- Tailwind CSS.
+- Reusable components.
+- Clean component architecture.
+
+Implement:
+- Functional navigation.
+- Product filtering.
+- Product search.
+- Product detail views.
+- Size and color selections.
+- Shopping cart.
+- Local cart persistence.
+- Working language switch.
+- WhatsApp order preparation.
+
+Keep all products, prices, categories, business details, images and WhatsApp configuration in an easily editable centralized data structure.
+
+Use illustrative demo products and clearly identify the catalogue as demo content. Make it easy to replace every image and product detail with the owner's real catalogue.
+
+Do not claim real stock, discounts, testimonials, customer reviews or delivery coverage.
+
+# 9. FINAL QUALITY EXPECTATION
+
+This should look like a professionally designed fashion brand website created by a premium digital agency.
+
+Do not stop after creating a basic homepage.
+
+Build all the main sections and interactions.
+
+Pay particular attention to the first screen: when the owner opens the website, the visual quality should immediately impress her.
+
+Prioritize design quality, product presentation, mobile responsiveness and a polished shopping experience.
+
+Make the website fully usable as a frontend demo without requiring paid APIs or subscriptions.

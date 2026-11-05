@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Boutique Trendy Shop DZ"
+description = "A polished bilingual French-Arabic storefront demo for an Algerian women's fashion boutique, with an editable sample catalog, persistent cart, product details, and WhatsApp-ready ordering."
+version = "1.0.0"
+id = "artifacts/boutique-trendy-shop-dz"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24281
+
+[services.development]
+run = "pnpm --filter @workspace/boutique-trendy-shop-dz run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/boutique-trendy-shop-dz", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/boutique-trendy-shop-dz/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24281"
+BASE_PATH = "/"

@@ -1,0 +1,1 @@
+- [Boutique storefront demo scope](storefront-demo-scope.md) — Keep the owner-facing preview distinct from a real, verified catalog or checkout.
