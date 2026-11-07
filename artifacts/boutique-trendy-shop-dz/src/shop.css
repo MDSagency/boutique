@@ -150,7 +150,7 @@
 .quantity-row{border-top:1px solid #e2d9ce;padding:18px 0;display:flex;align-items:center;justify-content:space-between;font-size:10px}
 .quantity-control{height:35px;border:1px solid #d8cdbf;display:flex;align-items:center;justify-content:space-between;min-width:103px}
 .quantity-control button{border:0;background:transparent;width:33px;height:33px;display:grid;place-items:center;color:#604f46}.quantity-control span{font-size:10px}
-.add-to-cart{width:100%;justify-content:space-between;margin-top:9px}
+.add-to-cart{width:100%;justify-content:center;gap:10px;margin-top:12px;min-height:52px;font-size:13px;font-weight:500;letter-spacing:.02em;text-transform:none}
 .inline-notice{margin-top:12px;background:#e8e0d4;color:#594940;padding:11px 13px;display:flex;align-items:center;gap:9px;font-size:10px}.inline-notice a{margin-left:auto;text-decoration:underline}
 /* Cart - improved UX */
 .cart-page{padding-top:24px;padding-bottom:80px}
