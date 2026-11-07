@@ -49,7 +49,6 @@ function App() {
   const count = cart.reduce((sum, item) => sum + item.quantity, 0);
   return <main className="shop" dir={locale === 'ar' ? 'rtl' : 'ltr'}>
     <header className="site-header">
-      <div className="announcement">{business.announcement[locale]} <span aria-hidden="true">•</span> <span>{t.indicative}</span></div>
       <div className="header-main wrap">
         <button className="icon-button mobile-menu" aria-label={t.menu} aria-expanded={mobileMenuOpen} onClick={() => setMobileMenuOpen(!mobileMenuOpen)}><Menu size={20}/></button>
         <nav className="main-nav"><Link href="/">{t.home}</Link><Link href="/catalogue">{t.navCollections}</Link><Link href="/catalogue?filter=Nouveautés">{t.navNew}</Link><a href="#contact">{t.contact}</a></nav>
@@ -103,7 +102,7 @@ function Home({ locale, t, ops }: SharedProps) {
         {/* Hero logo text - edit this line to change the logo */}
         <div className="hero-logo-text">BOUTIQUE TRENDY<br/><small>ALGER • SÉLECTION MODE</small></div>
         <div className="eyebrow"><i/> {t.heroKicker}</div><h1 className="serif">{t.heroTitle.split('\\n').map((line, i) => <span key={line}>{line}{i === 0 && <br/>}</span>)}</h1><p>{t.heroText}</p><Link className="button-dark" href="/catalogue">{t.shop}<ArrowRight size={16}/></Link></div>
-      <div className="hero-visual" data-reveal="right"><img src="/editorial-hero.jpg" alt={locale === 'fr' ? 'Éditorial mode, robe rose poudré' : 'إطلالة أزياء بفستان وردي هادئ'} /><div className="hero-caption"><span className="serif">{t.softDays}</span></div><span className="hero-stamp">B • T</span></div>
+      <div className="hero-visual" data-reveal="right"><img src="/editorial-hero.jpg" alt={locale === 'fr' ? 'Éditorial mode, robe rose poudré' : 'إطلالة أزياء بفستان وردي هادئ'} /><div className="hero-caption"><span className="serif">{t.softDays}</span></div></div>
       <div className="hero-side-note">UNE ALLURE SINGULIÈRE <span>•</span> ALGÉRIE</div>
     </section>
     <section className="category-section wrap" data-reveal>
@@ -382,7 +381,29 @@ function CartPage({ locale, t, ops }: SharedProps) {
 }
 
 function Footer({ locale, t }: { locale: Locale; t: SharedProps['t'] }) {
-  return <footer className="site-footer" id="contact"><div className="footer-main wrap"><div className="footer-brand"><Link className="wordmark footer-mark" href="/">BOUTIQUE <span>TRENDY</span></Link><p>{t.footerText}</p><span className="eyebrow">ALGÉRIE • ÉDITION MODE</span></div><div className="footer-column"><div className="eyebrow">{t.explore}</div><Link href="/">{t.home}</Link><Link href="/catalogue">{t.navCollections}</Link><Link href="/catalogue?filter=Nouveautés">{t.navNew}</Link><a href="#univers">{t.navStory}</a></div><div className="footer-column"><div className="eyebrow">{t.help}</div><Link href="/panier">{t.bag}</Link><a href={business.instagram} target="_blank" rel="noreferrer">{t.contact}</a><span>{t.legal}</span></div><div className="footer-social"><a href={business.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={19}/></a><span className="eyebrow">@BOUTIQUE_TRENDYSHOPDZ</span></div></div><div className="footer-bottom wrap"><span>© {new Date().getFullYear()} BOUTIQUE TRENDY. {t.rights}</span><span>{t.demo}</span><span>{locale === 'fr' ? 'Conçu avec soin' : 'صُمم بعناية'}</span></div></footer>;
+  return (
+    <footer className="site-footer" id="contact">
+      <div className="footer-main wrap">
+        <div className="footer-brand">
+          <p>{t.footerText}</p>
+        </div>
+        <div className="footer-column">
+          <div className="footer-heading">{t.explore}</div>
+          <Link href="/">{t.home}</Link>
+          <Link href="/catalogue">{t.navCollections}</Link>
+          <Link href="/catalogue?filter=Nouveautés">{t.navNew}</Link>
+        </div>
+        <div className="footer-column">
+          <div className="footer-heading">{t.help}</div>
+          <Link href="/panier">{t.bag}</Link>
+          <a href={business.instagramPlaceholder !== '#' ? business.instagramPlaceholder : business.instagram} target="_blank" rel="noreferrer">{t.contact}</a>
+        </div>
+        <div className="footer-social">
+          <a href={business.instagramPlaceholder !== '#' ? business.instagramPlaceholder : business.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={18}/></a>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export default App;

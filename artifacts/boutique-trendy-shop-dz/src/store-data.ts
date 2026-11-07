@@ -30,7 +30,7 @@ export const copy = {
     bestTitle: 'Les pièces à adopter', bestSub: 'Nos essentiels du moment', arrivalsTitle: 'Tout juste arrivés', arrivalsSub: 'La collection se renouvelle.',
     quick: 'Voir la pièce', from: 'À partir de', indicative: 'Prix indicatifs — contenu démo',
     editorTitle: 'Une allure qui vous appartient.', editorText: 'Des coupes fluides, des détails délicats et cette élégance sans effort. Trouvez la pièce qui vous ressemble.', discover: 'Explorer les nouveautés',
-    instagram: 'Un peu de notre univers', instagramSub: 'Retrouvez BOUTIQUE TRENDY sur Instagram', follow: 'Suivre le compte',
+    instagram: 'Un peu de notre univers', instagramSub: 'Retrouvez Nous sur Instagram', follow: 'Suivre le compte',
     footerText: 'Une sélection de pièces pensées pour vous accompagner avec élégance, du quotidien aux jours précieux.', explore: 'Explorer', help: 'À votre écoute', contact: 'Contact', legal: 'Mentions légales', rights: 'Tous droits réservés.', demo: 'Catalogue illustratif. Produits, visuels, prix et options sont des exemples éditables.',
     search: 'Rechercher une pièce…', catalog: 'La collection', showing: 'pièces à découvrir', filters: 'Filtrer par catégorie', sort: 'Trier',
     back: 'Retour à la collection', selectSize: 'Choisir une taille', selectColor: 'Choisir une couleur', quantity: 'Quantité', add: 'Ajouter au panier', added: 'Ajouté au panier', details: 'Détails de la pièce', demoPrice: 'Prix indicatif en DZD — exemple de démonstration.',
