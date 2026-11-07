@@ -99,7 +99,10 @@ function Home({ locale, t, ops }: SharedProps) {
   const categoryNames = [{ id: 'Tout voir', fr: t.all, ar: t.all }, ...categories.map((c) => ({ id: c.id, fr: c.fr, ar: c.ar }))];
   return <>
     <section className="hero wrap">
-      <div className="hero-copy fade-up"><Link className="wordmark hero-wordmark" href="/">BOUTIQUE <span>TRENDY</span><small>ALGER • SÉLECTION MODE</small></Link><div className="eyebrow"><i/> {t.heroKicker}</div><h1 className="serif">{t.heroTitle.split('\\n').map((line, i) => <span key={line}>{line}{i === 0 && <br/>}</span>)}</h1><p>{t.heroText}</p><Link className="button-dark" href="/catalogue">{t.shop}<ArrowRight size={16}/></Link></div>
+      <div className="hero-copy fade-up">
+        {/* Hero logo text - edit this line to change the logo */}
+        <div className="hero-logo-text">BOUTIQUE TRENDY<br/><small>ALGER • SÉLECTION MODE</small></div>
+        <div className="eyebrow"><i/> {t.heroKicker}</div><h1 className="serif">{t.heroTitle.split('\\n').map((line, i) => <span key={line}>{line}{i === 0 && <br/>}</span>)}</h1><p>{t.heroText}</p><Link className="button-dark" href="/catalogue">{t.shop}<ArrowRight size={16}/></Link></div>
       <div className="hero-visual" data-reveal="right"><img src="/editorial-hero.jpg" alt={locale === 'fr' ? 'Éditorial mode, robe rose poudré' : 'إطلالة أزياء بفستان وردي هادئ'} /><div className="hero-caption"><span className="serif">{t.softDays}</span></div><span className="hero-stamp">B • T</span></div>
       <div className="hero-side-note">UNE ALLURE SINGULIÈRE <span>•</span> ALGÉRIE</div>
     </section>
