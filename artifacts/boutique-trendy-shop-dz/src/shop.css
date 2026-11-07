@@ -301,8 +301,16 @@
   .catalog-pill{padding:8px 12px;font-size:12px}.catalog-search,.catalog-sort{height:44px}.catalog-search input,.catalog-sort select{font-size:16px}
   .catalogue-empty{padding:40px 16px 48px}.catalogue-empty h2{font-size:24px}.catalogue-empty p{font-size:13px}
 }
+/* RTL layout & responsiveness fixes */
+[dir="rtl"] .shop{overflow-x:hidden}
+[dir="rtl"] .hero,[dir="rtl"] .site-header,[dir="rtl"] .cart-page,[dir="rtl"] .catalogue,[dir="rtl"] .detail-page,[dir="rtl"] .site-footer{overflow-x:clip;max-width:100%}
 [dir="rtl"] .hero{direction:rtl}
 [dir="rtl"] .hero-copy{padding-left:0;padding-right:8.6%}
+[dir="rtl"] .hero-logo-text{text-align:right}
+[dir="rtl"] .hero-visual{margin-left:0;margin-right:4%}
+[dir="rtl"] .hero-visual:before{inset:16px 16px -16px -15px}
+[dir="rtl"] .hero-caption{left:auto;right:22px}
+[dir="rtl"] .hero-stamp{right:auto;left:-18px}
 [dir="rtl"] .hero-side-note{right:auto;left:-24px;transform:rotate(-90deg) translateX(-50%);transform-origin:left center}
 [dir="rtl"] .category-name{left:auto;right:18px}
 [dir="rtl"] .category-arrow{right:auto;left:17px}
@@ -314,11 +322,25 @@
 [dir="rtl"] .demo-image-tag{left:auto;right:15px}
 [dir="rtl"] .footer-mark{text-align:right}
 [dir="rtl"] .footer-column{align-items:flex-start}
-[dir="rtl"] .mobile-menu-panel{direction:rtl}
+[dir="rtl"] .mobile-menu-panel{direction:rtl;text-align:right}
+[dir="rtl"] .cart-summary-muted{text-align:start}
+[dir="rtl"] .product-info{direction:rtl}
+[dir="rtl"] .wrap{max-width:100%}
+[dir="rtl"] .breadcrumb{flex-wrap:wrap}
+@media(max-width:980px){
+  [dir="rtl"] .hero-copy{padding-left:0;padding-right:3%}
+}
 @media(max-width:700px){
-  [dir="rtl"] .hero-copy{padding:37px 25px 0}
-  [dir="rtl"] .hero-side-note{left:1px}
-  [dir="rtl"] .category-name{right:12px}
+  [dir="rtl"] .hero-copy{padding:37px 25px 0;text-align:right}
+  [dir="rtl"] .hero-logo-text{text-align:right}
+  [dir="rtl"] .hero-visual{margin:0 0 0 19px}
+  [dir="rtl"] .hero-visual:before{inset:10px 10px -10px -10px}
+  [dir="rtl"] .hero-caption{left:auto;right:13px;text-align:right}
+  [dir="rtl"] .hero-stamp{left:-7px;right:auto}
+  [dir="rtl"] .hero-side-note{display:none}
+  [dir="rtl"] .category-name{right:12px;left:auto}
+  [dir="rtl"] .announcement{padding-inline:10px;text-align:center}
+  [dir="rtl"] .mobile-menu-panel a{text-align:right}
 }
 
 .motion-enabled [data-reveal]{
