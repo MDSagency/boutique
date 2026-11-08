@@ -99,8 +99,7 @@ function Home({ locale, t, ops }: SharedProps) {
   return <>
     <section className="hero wrap">
       <div className="hero-copy fade-up">
-        {/* Hero logo text - edit this line to change the logo */}
-        <div className="hero-logo-text">BOUTIQUE TRENDY<br/><small>ALGER • SÉLECTION MODE</small></div>
+        <img className="hero-logo" src="/hero-logo.png" alt="Boutique Trendy" />
         <div className="eyebrow"><i/> {t.heroKicker}</div><h1 className="serif">{t.heroTitle.split('\\n').map((line, i) => <span key={line}>{line}{i === 0 && <br/>}</span>)}</h1><p>{t.heroText}</p><Link className="button-dark" href="/catalogue">{t.shop}<ArrowRight size={16}/></Link></div>
       <div className="hero-visual" data-reveal="right"><img src="/editorial-hero.jpg" alt={locale === 'fr' ? 'Éditorial mode, robe rose poudré' : 'إطلالة أزياء بفستان وردي هادئ'} /><div className="hero-caption"><span className="serif">{t.softDays}</span></div></div>
       <div className="hero-side-note">UNE ALLURE SINGULIÈRE <span>•</span> ALGÉRIE</div>
