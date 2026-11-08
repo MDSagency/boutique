@@ -15,7 +15,7 @@
 .mobile-menu-panel{display:none}
 .hero{min-height:610px;display:grid;grid-template-columns:.88fr 1fr;align-items:center;position:relative;padding-top:32px;padding-bottom:52px}
 .hero-copy{padding-left:8.6%;position:relative;z-index:2}
-.hero-logo{display:block;width:auto;max-width:min(460px,100%);height:auto;max-height:130px;object-fit:contain;margin:0 0 24px 0}
+.hero-logo{display:block;width:auto;max-width:min(620px,100%);height:auto;max-height:180px;object-fit:contain;margin:0 0 22px 0}
 .eyebrow{display:none!important}
 .hero-copy .eyebrow{display:flex;align-items:center;gap:10px}.hero-copy .eyebrow i{width:22px;height:1px;background:#bf9c73}
 .hero h1{font-size:clamp(38px,4.8vw,68px);line-height:1.02;font-weight:400;letter-spacing:-.04em;margin:8px 0 20px;color:#5a3a45}
@@ -265,7 +265,7 @@
   .hero{width:100%;display:flex;flex-direction:column-reverse;align-items:stretch;padding:0 0 42px;min-height:0}
   .hero-visual{height:390px;margin:0 19px 0 0}.hero-visual:before{inset:10px -10px -10px 10px}.hero-caption{left:13px;bottom:13px;padding:12px 15px;min-width:160px}.hero-caption .serif{font-size:17px}.hero-stamp{right:-7px;width:48px;height:48px}
   .hero-side-note{right:1px;top:47%;font-size:7px}
-  .hero-copy{padding:37px 25px 0}.hero-logo{max-width:min(320px,100%);max-height:90px;margin-bottom:18px}.hero h1{font-size:40px;margin:8px 0 13px;line-height:1.04}.hero-copy p{font-size:11px;max-width:290px;margin-bottom:17px}.hero .button-dark{min-height:43px}
+  .hero-copy{padding:37px 25px 0}.hero-logo{max-width:min(400px,100%);max-height:120px;margin-bottom:16px}.hero h1{font-size:40px;margin:8px 0 13px;line-height:1.04}.hero-copy p{font-size:11px;max-width:290px;margin-bottom:17px}.hero .button-dark{min-height:43px}
   .category-section{padding-top:36px;padding-bottom:54px}.section-heading{align-items:flex-end;gap:15px}.section-heading p{font-size:10px;max-width:210px;line-height:1.5}.section-heading h2{font-size:31px}.section-heading>.text-link{white-space:nowrap;font-size:8px}
   .category-grid{grid-template-columns:1fr 1fr;gap:10px}.category-tile{height:230px}.category-name{font-size:20px;left:12px;bottom:13px}
   .product-section{padding-top:27px;padding-bottom:55px}.product-heading{display:block}.product-heading .filter-chips{margin:19px 0 0;overflow:auto;flex-wrap:nowrap;padding-bottom:5px}.chip{white-space:nowrap;padding:8px 12px;font-size:8px}.products-grid{grid-template-columns:1fr 1fr;gap:21px 12px}.product-photo{height:245px}.product-title{font-size:16px}.product-price{font-size:10px}.add-quick{width:28px;height:28px}
